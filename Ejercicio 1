@@ -1,0 +1,31 @@
+package diagnostico1;
+import java.util.Scanner;  /*LIBRERIA DE INTRODUCCION DE DATOS*/
+/**
+ * @Guadalupe
+ */
+public class Diagnostico1 {
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in); /*PERMITE INGRESAR DATOS POR TECLADO*/
+        System.out.println("Introduzca el tamaño de la matriz que desee:"); /*SE SOLICITAN DATOS*/
+        int n=teclado.nextInt();   /*VARIABLE PARA ALMACENAR EL VALOR INTRODUCIDO*/
+        if (n == 0)  /*SI LA MATRIZ ES DE TAMAÑO 0*/
+            System.out.println("No se puede mostrar la matriz");
+        else {
+            String[][]dibujo = new String[n][n]; /*SE MOSTRARA LA MATRIZ SOLICITADA*/
+            for ( int i=0; i < dibx.length ;i++){
+                for (int j=0;  j<dibx.length;j++){             /*TOCO EL CICLO FOR PERMITE REALIZAR ACCIONES*/
+                    int x = i +1;                                /*SIEMPRE Y CUANDO SE CUMPLAN LAS CONDICIONES*/
+                    if((i==j)  ||  (j == (n - x))){
+                        dibx[i][j] = "*";
+                        System.out.print(dibx[i][j] + " ");
+                    }
+                    else{
+                       dibx[i][j] = " ";
+                       System.out.print(dibx[i][j] + " ");
+                    }
+                }  
+                System.out.println();
+            }   
+        }
+    }
+}

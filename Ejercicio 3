@@ -1,0 +1,32 @@
+package diagnostico3;
+import java.util.Scanner;    /*LIBRERIA DE INTRODUCCION DE DATOS*/
+/**
+ *
+ * @Guadalupe
+ */
+public class Diagnostico3 {
+
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);  /*PERMITE INGRESAR DATOS POR TECLADO*/
+        System.out.print("Introduzca el tamaño de la matriz que desee:");    /*SE SOLICITAN DATOS*/
+        int n=teclado.nextInt(); /*VARIABLE PARA ALMACENAR EL VALOR INTRODUCIDO*/
+        for(int i=0; i<n; i++){
+        System.out.print("*");  /*MUESTRA EL BORDE DE LA MATRIZ*/
+}
+        System.out.println();
+
+       for(int i=0; i<n-2; i++){
+       System.out.print("*");
+       for(int j=0; j<n-2; j++){   /*ESTA PARTE HACE QUE LA MARCO TENGA ESPACIOS BLANCOS*/
+       System.out.print(" ");
+}
+       System.out.println("*");
+}
+
+      for(int i=0; i<n; i++){   /*PMUESTRA LA LINEA INFERIOR DEL MARCO*/
+      System.out.print("*");
+}
+
+}
+}
+    
